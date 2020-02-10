@@ -53,15 +53,18 @@ int main(int argc, char** argv) {
 
     auto s1 = read_file(IN_PATH);
     get_xywh(s1, x, y, w, h);
+
+    pre_cluster(x, X, delta_x);
+    pre_cluster(y, Y, delta_y);
+    pre_cluster(w, W, delta_w);
+    pre_cluster(h, H, delta_h);
+
     N = x.size();
     m = X.size();
     n = Y.size();
     m_ = W.size();
     n_ = H.size();
-    pre_cluster(x, X, delta_x);
-    pre_cluster(y, Y, delta_y);
-    pre_cluster(w, W, delta_w);
-    pre_cluster(h, H, delta_h);
+
     regularize(x, y, w, h, X, Y, W, H, r);
     write_file(X, Y, W, H, r, OUT_PATH);
 
