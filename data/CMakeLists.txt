@@ -1,0 +1,3 @@
+﻿FILE(GLOB DATA "*.xywh")
+
+INSTALL(FILES ${DATA} DESTINATION "${CMAKE_BINARY_DIR}/bin/Debug/data")
