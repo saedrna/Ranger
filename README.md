@@ -2,6 +2,8 @@
 
 This is the code corresponding our paper "Fast and Regularized Reconstruction of Building Fa\c{c}ades from Street-View Images using Binary Integer Programming" submitted to ISPRS2020 Congress.
 
+![Result](img/result.png)
+
 ## Requirements
 The only requirement is Mosek, which has a free one-year trial version for academic use.
 
